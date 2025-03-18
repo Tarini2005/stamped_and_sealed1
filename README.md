@@ -2,8 +2,9 @@
 
 An exercise to create a Python package, build it, test it, distribute it, and use it. See [instructions](./instructions.md) for details.
 
-Need to include:
-a plain-language description of your project, including:
+## Features
+(PACKAGE NAME) is a Python package designed to make coding more fun with simple text transformations and feel-good messages. It includes four features: reversing text, converting words into leetspeak, generating random compliments for developers, and providing fun, coding-related fortunes. The reverse text function flips any string backward, while the leetspeak converter transforms text into a stylized hacker-style format. The developer compliments feature offers encouraging messages like "Your code is legendary" or "You're a debugging wizard," and the fortune function provides humorous and insightful messages inspired by fortune cookies. Whether used as a command-line tool or integrated into other applications, (PACKAGE NAME) adds a bit of positivity and entertainment to a developer's workflow.
+
 
 a badge at the top of the README.md file showing the result of the latest build/test workflow run.
 
