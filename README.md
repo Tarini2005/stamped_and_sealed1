@@ -31,18 +31,62 @@ Now matter which feature you decide to use, *CodeJester* adds a bit of positivit
 
 ***
 ## Instructions for how to configure and run all parts of CodeJester for any developer on any platform
-*Running each feature:*
-```bash
-# To reverse any given text
-python -m codejester.reverse_text "Hello, World!"
-# To convert any given text into leetspeak
-python -m codejester.leetspeak "Hello, World!"
-# To print a random compliment based on a chosen category (debugging, coding, or motivation)
-python -m codejester.dev_compliments debugging
-# To generate a random fortune based on a chosen theme (inspirational, funny, or programming)
-python -m codejester.fortune_py programming
-pytest
-```
+### Installation and Setup
+
+1. **Clone the Repository**:
+   - Clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/your-username/3-python-package-stamped_and_sealed.git
+     cd 3-python-package-stamped_and_sealed
+     ```
+
+2. **Set Up a Virtual Environment**:
+   - Create a virtual environment (recommended):
+     ```bash
+     python -m venv venv
+     ```
+   - Activate the virtual environment:
+     - On Windows:
+       ```bash
+       venv\Scripts\activate
+       ```
+     - On macOS/Linux:
+       ```bash
+       source venv/bin/activate
+       ```
+
+3. **Install Dependencies**:
+   - Install the required dependencies using `pip`:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+4. **Run the Package**:
+   - You can now use the `CodeJester` package in your Python scripts or interactive sessions. For example:
+     ```python
+     from stamped_and_sealed.reverse_text import reverse_text
+     from stamped_and_sealed.dev_compliments import dev_compliment
+     from stamped_and_sealed.fortune_py import fortune
+     from stamped_and_sealed.leetspeak import leetspeak
+
+     print(reverse_text("hello"))
+     print(dev_compliment("coding"))
+     print(fortune())
+     print(leetspeak("hello"))
+     ```
+
+5. **Run the Example Script**:
+   - An example script (`example.py`) is provided to demonstrate the package's functionality. Run it using:
+     ```bash
+     python example.py
+     ```
+
+6. **Run Tests**:
+   - To verify that everything is working correctly, run the tests:
+     ```bash
+     pytest tests/
+     ```
+
 ***
 ## Instructions for how to set up any environment variables and import any starter data into the database, as necessary, for the system to operate correctly when run
 
