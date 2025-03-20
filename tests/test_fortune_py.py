@@ -1,5 +1,5 @@
 import pytest
-from pyfortune import generate_fortune, get_random_fortune, format_fortune
+from stamped_and_sealed.fortune_py import generate_fortune, get_random_fortune, format_fortune
 
 def test_fortune_generation():
     default_fortune = generate_fortune()
