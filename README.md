@@ -11,6 +11,7 @@ Now matter which feature you decide to use, *CodeJester* adds a bit of positivit
 
 ***
 ## A badge showing the result of the latest build/test workflow run
+![Latest Build Status](https://github.com/software-students-spring2025/3-python-package-stamped_and_sealed/actions/workflows/event-logger.yml/badge.svg)](https://github.com/software-students-spring2025/3-python-package-stamped_and_sealed/actions/workflows/event-logger.yml)
 
 ***
 ## A link to *CodeJester*'s page on the PyPI website
@@ -208,7 +209,7 @@ git commit -m "Added new feature"
 ## *Stamped and Sealed* Teammates
 - [Ethan Yu](https://github.com/ethanyuu910) 
 - [Isha Gopal](https://github.com/ishy04)
-- [Jennifer Huang](https://github.com/jenn.hng) 
+- [Jennifer Huang](https://github.com/jennhng) 
 - [Lana Davydov](https://github.com/lanadavydov)
 - [Tarini Mathur](https://github.com/tmathur2005)
 
