@@ -191,19 +191,18 @@ cd 3-python-package-stamped_and_sealed
 ```
 2. Set Up the Virtual Environment: Use pipenv to manage dependencies and virtual environments. Install pipenv (if you haven’t already) and set up the environment
 ```
-pip install pipenv
-pipenv install --dev
-pipenv shell
+python3 -m pip install pipenv
+pipenv install
+pip install -e .
 ```
-3. Install Dependencies: Ensure all required dependencies are installed with `pipenv install`
-4. Build and Test the Package: Before making any changes, run tests to ensure the package is working correctly by running `pytest`
-5. Create a New Feature Branch: Before making any changes, create a new branch with `git checkout -b feature-new-function`
-6. Make Your Changes and Commit: Once you have implemented your changes, stage and commit them:
+3. Build and Test the Package: Before making any changes, run tests to ensure the package is working correctly by running `pytest`
+4. Create a New Feature Branch: Before making any changes, create a new branch with `git checkout -b feature-new-function`
+5. Make Your Changes and Commit: Once you have implemented your changes, stage and commit them:
 ```
 git add .
 git commit -m "Added new feature"
 ```
-7. Push Your Changes and Create a Pull Request: Push your changes to your forked repository with  `git push origin feature-new-function`
+5. Push Your Changes and Create a Pull Request: Push your changes to your forked repository with  `git push origin feature-new-function`
 
 ***
 ## *Stamped and Sealed* Teammates
