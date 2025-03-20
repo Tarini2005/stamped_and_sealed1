@@ -11,11 +11,10 @@ Now matter which feature you decide to use, *CodeJester* adds a bit of positivit
 
 ***
 ## A badge showing the result of the latest build/test workflow run
-![Latest Build Status](https://github.com/software-students-spring2025/3-python-package-stamped_and_sealed/actions/workflows/event-logger.yml/badge.svg)](https://github.com/software-students-spring2025/3-python-package-stamped_and_sealed/actions/workflows/event-logger.yml)
-
+![Latest Build Status](https://github.com/software-students-spring2025/3-python-package-stamped_and_sealed/actions/workflows/event-logger.yml/badge.svg)
 ***
 ## A link to *CodeJester*'s page on the PyPI website
-
+https://test.pypi.org/project/stamped-and-sealed/
 ***
 ## How a developer who wants to import your project into their own code can do so - include documentation and code examples for all functions in your package and a link to an example Python program that uses each of them.
 
