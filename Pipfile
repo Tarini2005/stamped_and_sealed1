@@ -1,1 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+stamped_and_sealed = {path = ".", editable = true}  # Use your actual package name
+build = "*"
+pytest = "*"
+pytest-cov = "*"  # Ensures test coverage reporting
+twine = "*"  # Required for uploading to PyPI
+pipenv = "*"  # Ensures virtual environment management
+wheel = "*"  # Helps in packaging
+
+[dev-packages]
+flake8 = "*"  # Code quality checker
+black = "*"  # Code formatter
+mypy = "*"  # Optional: Type checking
+
+[requires]
+python_version = "3.8"  # Specify an exact version if needed
 
