@@ -180,7 +180,7 @@ random_fortune = fortune_py.get_random_fortune()
 formatted = fortune_py.format_fortune(random_fortune, "ascii_box")
 print(formatted)
 ```
-
+See [Example_Project](./Example_Project) for a python project that uses all these functions
 ***
 ## How a developer who wants to contribute to CodeJester can set up the virtual environment, install dependencies, and build and test your package for themselves
 
