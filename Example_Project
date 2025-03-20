@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+"""
+Simple example demonstrating stamped_and_sealed functions with PyFortune
+"""
+
+from stamped_and_sealed import dev_compliment, leetspeak, reverse_text, fortune_py
+
+def main():
+    print("===== DEVELOPER TOOLKIT DEMO =====\n")
+    
+    print("1. Basic Fortune:")
+    fortune = pyfortune.generate_fortune("inspirational")
+    print(fortune)
+    print()
+    
+    print("2. Formatted Fortune:")
+    fortune = pyfortune.generate_fortune("programming")
+    formatted = pyfortune.format_fortune(fortune, "ascii_box")
+    print(formatted)
+    print()
+    
+    print("3. Random Fortune:")
+    random_fortune = pyfortune.get_random_fortune()
+    print(random_fortune)
+    print()
+    
+    print("4. Developer Compliment:")
+    dev_compliment("motivation")
+    print()
+    
+    print("5. Leetspeak Conversion:")
+    normal_text = "Hello Coder"
+    leet_text = leetspeak(normal_text)
+    print(f"Original: {normal_text}")
+    print(f"Leetspeak: {leet_text}")
+    print()
+    
+    print("6. Text Reversal:")
+    normal_text = "Python is awesome"
+    reversed_text = reverse_text(normal_text)
+    print(f"Original: {normal_text}")
+    print(f"Reversed: {reversed_text}")
+    print()
+    
+    print("7. Function Combinations:")
+    fortune = pyfortune.get_random_fortune()
+    print("Original fortune:")
+    print(fortune)
+    print("\nLeetspeak fortune:")
+    print(leetspeak(fortune))
+    print("\nReversed and formatted fortune:")
+    print(pyfortune.format_fortune(reverse_text(fortune), "ascii_box"))
+
+if __name__ == "__main__":
+    main()
