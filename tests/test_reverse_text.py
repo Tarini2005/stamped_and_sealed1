@@ -1,5 +1,5 @@
 import pytest
-from my_fun_package.reverse_text import reverse_text
+from stamped_and_sealed.reverse_text import reverse_text
 
 def test_basic_reversal():
     assert reverse_text("hello") == "olleh"
