@@ -214,9 +214,94 @@ git commit -m "Added new feature"
 
 ***
 ## Instructions for how to configure and run all parts of CodeJester for any developer on any platform
+These instructions will help developers set up and run the package on any platform (Windows, macOS, or Linux).
+
+### Installation and Setup
+
+1. **Clone the Repository**:
+   - Clone the repository to your local machine:
+     ```bash
+     git clone https://github.com/your-username/3-python-package-stamped_and_sealed.git
+     cd 3-python-package-stamped_and_sealed
+     ```
+2. **Set Up a Virtual Environment**:
+   - Create a virtual environment (recommended):
+     ```bash
+     python -m venv venv
+     ```
+   - Activate the virtual environment:
+     - On Windows:
+       ```bash
+       venv\Scripts\activate
+       ```
+     - On macOS/Linux:
+       ```bash
+       source venv/bin/activate
+       ```
+3. **Install Dependencies**:
+   - Install the required dependencies using `pip`:
+     ```bash
+     pip install -r requirements.txt
+     ```
+4. **Run the Package**:
+   - You can now use the `CodeJester` package in your Python scripts or interactive sessions. For example:
+     ```python
+     from stamped_and_sealed.reverse_text import reverse_text
+     from stamped_and_sealed.dev_compliments import dev_compliment
+     from stamped_and_sealed.fortune_py import fortune
+     from stamped_and_sealed.leetspeak import leetspeak
+
+     print(reverse_text("hello"))
+     print(dev_compliment("coding"))
+     print(fortune())
+     print(leetspeak("hello"))
+     ```
+5. **Run the Example Script**:
+   - An example script (`example.py`) is provided to demonstrate the package's functionality. Run it using:
+     ```bash
+     python example.py
+     ```
+6. **Run Tests**:
+   - To verify that everything is working correctly, run the tests:
+     ```bash
+     pytest tests/
+     ```
 
 ***
 ## Instructions for how to set up any environment variables and import any starter data into the database, as necessary, for the system to operate correctly when run
+### Environment Variables
+1. **Create a `.env` File**:
+   - In the root directory of the project, create a `.env` file:
+     ```bash
+     touch .env
+     ```
+2. **Add Required Variables**:
+   - Open the `.env` file and add the necessary variables. For example:
+     ```plaintext
+     API_KEY=your_api_key_here
+     DATABASE_URL=your_database_url_here
+     ```
+3. **Load Environment Variables**:
+   - Install the `python-dotenv` package to load the variables automatically:
+     ```bash
+     pip install python-dotenv
+     ```
+   - In your Python code, load the variables using:
+     ```python
+     from dotenv import load_dotenv
+     import os
 
-***
-if there are any "secret" configuration files, such as .env or similar files, that are not included in the version control repository, examples of these files, such as env.example, with dummy data must be included in the repository and exact instructions for how to create the proper configuration files and what their contents should be must be supplied to the course admins by the due date.
+     load_dotenv()
+     api_key = os.getenv("API_KEY")
+     database_url = os.getenv("DATABASE_URL")
+     ```
+### Importing Starter Data
+1. **Set Up the Database**:
+   - Ensure your database is running and accessible. Update the `.env` file with the correct `DATABASE_URL`.
+2. **Run the Data Import Script**:
+   - If a script is provided to import starter data, run it using:
+     ```bash
+     python scripts/import_data.py
+     ```
+3. **Verify the Data**:
+   - Check the database to ensure the starter data has been imported correctly.
