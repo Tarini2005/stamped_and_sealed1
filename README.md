@@ -20,18 +20,29 @@ Now matter which feature you decide to use, *CodeJester* adds a bit of positivit
 
 ***
 ## How a developer who wants to contribute to CodeJester can set up the virtual environment, install dependencies, and build and test your package for themselves
-
+   
 ***
 ## *Stamped and Sealed* Teammates
 - [Ethan Yu](https://github.com/ethanyuu910) 
 - [Isha Gopal](https://github.com/ishy04)
-- [Jennifer Huang](https://github.com/jenn.hng) 
+- [Jennifer Huang](https://github.com/jennhng) 
 - [Lana Davydov](https://github.com/lanadavydov)
 - [Tarini Mathur](https://github.com/tmathur2005)
 
 ***
 ## Instructions for how to configure and run all parts of CodeJester for any developer on any platform
-
+*Running each feature:*
+```bash
+# To reverse any given text
+python -m codejester.reverse_text "Hello, World!"
+# To convert any given text into leetspeak
+python -m codejester.leetspeak "Hello, World!"
+# To print a random compliment based on a chosen category (debugging, coding, or motivation)
+python -m codejester.dev_compliments debugging
+# To generate a random fortune based on a chosen theme (inspirational, funny, or programming)
+python -m codejester.fortune_py programming
+pytest
+```
 ***
 ## Instructions for how to set up any environment variables and import any starter data into the database, as necessary, for the system to operate correctly when run
 
