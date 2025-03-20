@@ -18,6 +18,169 @@ Now matter which feature you decide to use, *CodeJester* adds a bit of positivit
 ***
 ## How a developer who wants to import your project into their own code can do so - include documentation and code examples for all functions in your package and a link to an example Python program that uses each of them.
 
+To use the functions from our package in your own code, you'll need to import them as follows:
+
+```python
+from stamped_and_sealed import dev_compliment, leetspeak, reverse_text, fortune_py
+```
+
+Function Documentation and Examples
+
+### `dev_compliment(category: str) -> None`
+
+Provides positive affirmations for developers in different categories.
+
+**Parameters:**
+- `category` (str): The category of compliment. Options include "debugging", "coding", or "motivation".
+
+**Returns:**
+- None (prints the compliment to the console)
+
+**Example usage:**
+```python
+from stamped_and_sealed import dev_compliment
+
+# Get a coding-related compliment
+dev_compliment("coding")
+
+# Get a debugging-related compliment
+dev_compliment("debugging")
+
+# Get a motivational compliment
+dev_compliment("motivation")
+```
+
+### `leetspeak(text: str) -> str`
+
+Converts normal text into leetspeak by replacing letters with numbers and symbols.
+
+**Parameters:**
+- `text` (str): The normal text to convert.
+
+**Returns:**
+- str: The text converted to leetspeak.
+
+**Example usage:**
+```python
+from stamped_and_sealed import leetspeak
+
+# Convert a simple message
+normal_text = "Hello World"
+leet_text = leetspeak(normal_text)
+print(leet_text)  # Output: "#3||0 \\/\\/0|2|d"
+
+# Use with user input
+user_input = input("Enter text to convert: ")
+converted = leetspeak(user_input)
+print(f"Leetspeak version: {converted}")
+```
+
+### `reverse_text(text: str) -> str`
+
+Reverses the characters in the provided text.
+
+**Parameters:**
+- `text` (str): The input string to reverse.
+
+**Returns:**
+- str: The reversed string.
+
+**Example usage:**
+```python
+from stamped_and_sealed import reverse_text
+
+# Reverse a simple message
+original = "Python is fun"
+reversed_message = reverse_text(original)
+print(reversed_message)  # Output: "nuf si nohtyP"
+
+# Create a palindrome checker
+def is_palindrome(word):
+    return word.lower() == reverse_text(word).lower()
+
+print(is_palindrome("radar"))  # Output: True
+print(is_palindrome("Python"))  # Output: False
+```
+
+### PyFortune Functions
+
+#### `pyfortune.generate_fortune(theme: str = "inspirational") -> str`
+
+Generates a fortune cookie message from the specified theme.
+
+**Parameters:**
+- `theme` (str, optional): The theme of fortune to generate. Options include "inspirational", "funny", or "programming". Default is "inspirational".
+
+**Returns:**
+- str: A fortune message from the selected theme.
+
+**Example usage:**
+```python
+from stamped_and_sealed import fortune_py
+
+# Get a default (inspirational) fortune
+fortune = fortune_py.generate_fortune()
+print(fortune)
+
+# Get a funny fortune
+funny_fortune = fortune_py.generate_fortune("funny")
+print(funny_fortune)
+
+# Get a programming-related fortune
+prog_fortune = fortune_py.generate_fortune("programming")
+print(prog_fortune)
+```
+
+#### `pyfortune.format_fortune(message: str, format_type: str = "plain") -> str`
+
+Formats a message with the specified formatting style.
+
+**Parameters:**
+- `message` (str): The message to format.
+- `format_type` (str, optional): The formatting style to apply. Options include "plain" or "ascii_box". Default is "plain".
+
+**Returns:**
+- str: The formatted message.
+
+**Example usage:**
+```python
+from stamped_and_sealed import fortune_py
+
+message = "Success is not final, failure is not fatal."
+
+# Format with plain style (no special formatting)
+plain = fortune_py.format_fortune(message, "plain")
+print(plain)
+
+# Format with ASCII box
+boxed = fortune_py.format_fortune(message, "ascii_box")
+print(boxed)
+```
+
+#### `pyfortune.get_random_fortune() -> str`
+
+Generates a random fortune from any available theme.
+
+**Parameters:**
+- None
+
+**Returns:**
+- str: A random fortune message.
+
+**Example usage:**
+```python
+from stamped_and_sealed import fortune_py
+
+# Get a random fortune
+fortune = fortune_py.get_random_fortune()
+print(fortune)
+
+# Get and format a random fortune
+random_fortune = fortune_py.get_random_fortune()
+formatted = fortune_py.format_fortune(random_fortune, "ascii_box")
+print(formatted)
+```
+
 ***
 ## How a developer who wants to contribute to CodeJester can set up the virtual environment, install dependencies, and build and test your package for themselves
 
