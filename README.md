@@ -23,8 +23,8 @@ Now matter which feature you decide to use, *CodeJester* adds a bit of positivit
 
 1. Fork and Clone the Repository: Start by forking the repository on GitHub and cloning it locally:
 ```
-git clone https://github.com/yourusername/codejester.git
-cd codejester
+git clone https://github.com/software-students-spring2025/3-python-package-stamped_and_sealed.git
+cd 3-python-package-stamped_and_sealed
 ```
 2. Set Up the Virtual Environment: Use pipenv to manage dependencies and virtual environments. Install pipenv (if you haven’t already) and set up the environment
 ```
