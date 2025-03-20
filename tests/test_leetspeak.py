@@ -1,5 +1,5 @@
 import pytest
-from leetspeak.leetspeak import convert_to_leetspeak
+from stamped_and_sealed.leetspeak import convert_to_leetspeak
 
 def test_basic_words():
     assert convert_to_leetspeak("hello") == "#3110"
